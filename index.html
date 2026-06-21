@@ -44,7 +44,8 @@
             color: #2e8b57;
         }
         
-        p {
+        p,
+        li {
             font-size: 18px;
             line-height: 1.6;
         }
@@ -60,9 +61,8 @@
         .menu {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
-            margin-top: 20px;
         }
         
         .menu a {
@@ -77,65 +77,114 @@
         .menu a:hover {
             background-color: #246b45;
         }
+        
+        .img-botao {
+            max-width: 650px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .img-botao:hover {
+            transform: scale(1.03);
+        }
+        
+        footer a {
+            color: #2e8b57;
+            font-weight: bold;
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
 
+    <!-- MENU DE ANCORAGEM -->
     <div class="card center">
-        <h1>Terraria</h1>
-
-        <img src="https://cdn.mos.cms.futurecdn.net/ifMzRDobCXkhESKrKwhRxk.jpg" alt="Imagem do Terraria">
-
-        <p>
-            Terraria é um jogo de aventura, sobrevivência e sandbox em 2D, desenvolvido pela Re-Logic e lançado em 2011. O jogo conquistou milhões de jogadores graças à sua grande liberdade de exploração, construção e combate.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>Sobre o jogo</h2>
-
-        <p>
-            Em Terraria, o jogador começa apenas com ferramentas básicas e deve explorar o mundo para coletar recursos, construir abrigos e fabricar equipamentos cada vez mais poderosos.
-        </p>
-
-        <p>
-            Ao longo da jornada, é possível encontrar tesouros escondidos, descobrir novos biomas, interagir com NPCs e enfrentar dezenas de chefes que aumentam progressivamente a dificuldade do jogo.
-        </p>
-
-        <p>
-            Cada mundo é gerado aleatoriamente, tornando cada aventura única e cheia de novas descobertas.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>O que você faz no jogo?</h2>
-
-        <ol>
-            <li>Explora cavernas e biomas diferentes;</li>
-            <li>Coleta recursos e minérios;</li>
-            <li>Constrói casas e estruturas;</li>
-            <li>Interage com NPCs;</li>
-            <li>Fabrica armas, armaduras e acessórios;</li>
-            <li>Enfrenta chefes e eventos especiais.</li>
-        </ol>
-    </div>
-
-    <div class="card center">
-        <h2>Explorar conteúdo</h2>
-
         <div class="menu">
-            <a href="progressao.html">Progressão</a>
-            <a href="classes.html">Classes</a>
-            <a href="chefes.html">Chefes</a>
+            <a href="#sobre">Sobre o jogo</a>
+            <a href="#jogo">O que você faz no jogo?</a>
+            <a href="#explorar">Explorar</a>
+            <a href="#contato">Contato</a>
         </div>
     </div>
 
     <div class="card center">
+        <h1>Terraria</h1>
+
+        <img src="https://cdn.mos.cms.futurecdn.net/ifMzRDobCXkhESKrKwhRxk.jpg" alt="Terraria">
+
         <p>
-            Site desenvolvido para apresentação sobre o jogo Terraria.
+            Terraria é um jogo de aventura, sobrevivência e sandbox em 2D, desenvolvido pela Re-Logic e lançado em 2011.
         </p>
     </div>
+
+    <div class="card">
+        <h2 id="sobre">Sobre o jogo</h2>
+
+        <p>
+            Em Terraria, o jogador coleta recursos, constrói estruturas, explora cavernas e enfrenta desafios cada vez maiores.
+        </p>
+
+        <p>
+            Cada mundo é gerado aleatoriamente, tornando cada aventura única.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2 id="jogo">O que você faz no jogo?</h2>
+
+        <ol>
+            <li>Explorar cavernas e biomas;</li>
+            <li>Coletar recursos;</li>
+            <li>Construir casas;</li>
+            <li>Interagir com NPCs;</li>
+            <li>Criar equipamentos;</li>
+            <li>Derrotar chefes.</li>
+        </ol>
+    </div>
+
+    <div class="card center">
+        <h2 id="explorar">Explorar conteúdo</h2>
+
+        <div class="menu">
+            <a href="paginas/progressao.html">Progressão</a>
+            <a href="paginas/classes.html">Classes</a>
+            <a href="paginas/chefes.html">Chefes</a>
+        </div>
+
+        <br>
+
+        <!-- IMAGEM FUNCIONANDO COMO BOTÃO -->
+        <a href="paginas/classes.html">
+            <img src="https://i.ytimg.com/vi/RJTBbSlV4n8/maxresdefault.jpg" alt="Ir para Classes" class="img-botao">
+        </a>
+    </div>
+
+    <div class="card center">
+        <h2>Site Oficial</h2>
+
+        <a href="https://www.terraria.org/" target="_blank" rel="noopener">
+            Acessar Site Oficial do Terraria
+        </a>
+    </div>
+
+    <footer class="card center" id="contato">
+        <h2>Contato</h2>
+
+        <p>
+            Email:
+            <a href="mailto:joaogabrielgomescarvalho72@email.com">
+                joaogabrielgomescarvalho72@email.com
+            </a>
+        </p>
+
+        <p>
+            Telefone:
+            <a href="tel:+558994703044">
+                (89) 99470-3044
+            </a>
+        </p>
+    </footer>
 
 </body>
 
