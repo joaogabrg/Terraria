@@ -58,26 +58,6 @@
             margin: 20px auto;
         }
         
-        .menu {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-        
-        .menu a {
-            text-decoration: none;
-            background-color: #2e8b57;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-        
-        .menu a:hover {
-            background-color: #246b45;
-        }
-        
         .img-botao {
             max-width: 650px;
             transition: transform 0.3s;
@@ -92,6 +72,52 @@
             color: #2e8b57;
             font-weight: bold;
             text-decoration: none;
+        }
+        
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+        
+        .card-link {
+            width: 250px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+        }
+        
+        .card-link a {
+            display: block;
+        }
+        
+        .card-link img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            margin: 0;
+            border-radius: 0;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        
+        .card-link img:hover {
+            transform: scale(1.05);
+        }
+        
+        .card-link h3 {
+            color: #2e8b57;
+            text-align: center;
+            margin: 15px 0 10px;
+        }
+        
+        .card-link p {
+            font-size: 15px;
+            text-align: center;
+            padding: 0 15px 15px;
         }
     </style>
 </head>
@@ -143,21 +169,55 @@
         </ol>
     </div>
 
-    <div class="card center">
-        <h2 id="explorar">Explorar conteúdo</h2>
+    <h3>Clique em uma imagem para explorar</h3>
 
-        <div class="menu">
-            <a href="paginas/progressao.html">Progressão</a>
-            <a href="paginas/classes.html">Classes</a>
-            <a href="paginas/chefes.html">Chefes</a>
+    <div class="card center">
+        <h2 id="explorar">Explorar Conteúdo</h2>
+
+        <div class="galeria">
+            <div class="card-link">
+
+                <a href="paginas/progressao.html">
+                    <img src="https://i.ytimg.com/vi/XoiT_K8ev2g/maxresdefault.jpg" alt="Progressão">
+                </a>
+
+                <h3>Progressão</h3>
+
+                <p>
+                    Descubra como o jogador evolui durante a aventura.
+                </p>
+
+            </div>
+
+            <div class="card-link">
+
+                <a href="paginas/classes.html">
+                    <img src="https://i.ytimg.com/vi/RJTBbSlV4n8/maxresdefault.jpg" alt="Classes">
+                </a>
+
+                <h3>Classes</h3>
+
+                <p>
+                    Conheça Melee, Ranger, Mage e Summoner.
+                </p>
+
+            </div>
+
+            <div class="card-link">
+                <a href="paginas/chefes.html">
+                    <img src="https://preview.redd.it/epic-wallpaper-v0-ld25lhc9xxma1.png?auto=webp&s=c4291c5ed28a736a7a7e188d7c7ba60141b5ccdc" alt="Chefes">
+                </a>
+
+                <h3>Chefes</h3>
+
+                <p>
+                    Veja os principais desafios e inimigos do jogo.
+                </p>
+                </a>
+
+            </div>
         </div>
 
-        <br>
-
-        <!-- IMAGEM FUNCIONANDO COMO BOTÃO -->
-        <a href="paginas/classes.html">
-            <img src="https://i.ytimg.com/vi/RJTBbSlV4n8/maxresdefault.jpg" alt="Ir para Classes" class="img-botao">
-        </a>
     </div>
 
     <div class="card center">
